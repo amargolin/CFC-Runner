@@ -9,13 +9,11 @@ public class testScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-<<<<<<< HEAD
 	void Update () {
 		//123
 		//HuixedUpdate
-=======
+	}
 	void fixedUpdate () {
 		//123 haha
->>>>>>> origin/master
 	}
 }
