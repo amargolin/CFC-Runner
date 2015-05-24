@@ -42,12 +42,23 @@ public class PlayerController : MonoBehaviour
 
 	void LateUpdate ()
 	{
+		SetDirection();
+		SetAnimation();
+	}
+
+	void SetDirection()
+	{
 		if(rb.velocity.x == 0)
 			return;
 		var direction = rb.velocity.x < 0 ? -1 : 1;
 		var scale = transform.localScale;
 		scale.x = Mathf.Abs (scale.x) * direction;
 		transform.localScale = scale;
+	}
+
+	void SetAnimation()
+	{
+		anim.SetBool("IsRun", rb.velocity.x != 0);
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
