@@ -11,5 +11,6 @@ public class testScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//123
+		//HuixedUpdate
 	}
 }
