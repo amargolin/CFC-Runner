@@ -1,0 +1,14 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class CameraController : MonoBehaviour
+{
+	public GameObject Player;
+
+	void LateUpdate ()
+	{
+		var position = transform.position;
+		position.x = Player.transform.position.x;
+		transform.position = position;
+	}
+}
