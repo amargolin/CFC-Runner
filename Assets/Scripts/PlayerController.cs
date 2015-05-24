@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 		transform.localScale = scale;
 	}
 
-	void OnCollisionEnter2D (Collision2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Drug") {
 			transform.localScale *= 1.2f;
