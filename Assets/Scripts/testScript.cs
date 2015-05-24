@@ -9,7 +9,7 @@ public class testScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		//123
+	void fixedUpdate () {
+		//123 haha
 	}
 }
